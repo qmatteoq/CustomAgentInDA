@@ -1,0 +1,27 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.2/schema.json",
+    "schema_version": "v2.2",
+    "name_for_human": "TravelAgentWrapper",
+    "description_for_human": "<Please add description of the plugin>",
+    "namespace": "travelagentwrapper",
+    "functions": [
+        {
+            "name": "GetTravelPlan",
+            "description": "Get a travel plan based on the provided prompt."
+        }
+    ],
+    "runtimes": [
+        {
+            "type": "OpenApi",
+            "auth": {
+                "type": "None"
+            },
+            "spec": {
+                "url": "apiSpecificationFile/openapi.json"
+            },
+            "run_for_functions": [
+                "GetTravelPlan"
+            ]
+        }
+    ]
+}

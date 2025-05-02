@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="TravelAgency.AppHost/TravelAgency.AppHost.csproj" />
+  <Project Path="TravelAgency.ServiceDefaults/TravelAgency.ServiceDefaults.csproj" />
+  <Project Path="TravelAgency.API/TravelAgency.API.csproj" />
+  <Project Path="TravelAgency.Shared/TravelAgency.Shared.csproj" />
+</Solution>

@@ -1,0 +1,50 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "TravelAgency.API | v1",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://qfpn28w9-5175.euw.devtunnels.ms/"
+    }
+  ],
+  "paths": {
+    "/getTravelPlan": {
+      "get": {
+        "tags": [
+          "TravelAgency.API"
+        ],
+        "description": "Get a travel plan based on the provided prompt.",
+        "operationId": "GetTravelPlan",
+        "parameters": [
+          {
+            "name": "prompt",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "TravelAgency.API"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   },
   "servers": [
     {
-      "url": "https://qfpn28w9-5175.euw.devtunnels.ms/"
+      "url": "<YOUR_PUBLIC_URL>"
     }
   ],
   "paths": {
